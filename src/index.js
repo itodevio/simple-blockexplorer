@@ -1,12 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Blocks from './Blocks';
+import Block from './Block';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Blocks />
+  },
+  {
+    path: '/blocks',
+    element: <Blocks />
+  },
+  {
+    path: '/blocks/:blockHash',
+    element: <Block />
+  },
+])
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <h1 className="page-title">BlockIto Explorer</h1>
+    <RouterProvider router={router} />
   </React.StrictMode>,
   document.getElementById('root')
 );

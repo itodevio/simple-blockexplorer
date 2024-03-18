@@ -1,0 +1,45 @@
+.Blocks {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Blocks .title {
+  font-size: 1.5rem;
+}
+
+.Blocks h2 {
+  font-size: 2rem;
+}
+
+.Blocks .block-search {
+  width: 50%;
+  display: flex;
+  gap: 1rem;
+}
+
+tr {
+  cursor: pointer;
+}
+
+.Blocks .block-search input {
+  border: 0;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 300px;
+  width: 75%;
+  color: #333;
+}
+
+.Blocks .block-search button {
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  width: calc(25% - 1rem);
+  background-color: #51d6ca;
+  color: #fff;
+  cursor: pointer;
+}
